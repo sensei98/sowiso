@@ -23,11 +23,13 @@ label{
 input{
     margin-top:10vw;
     margin-left:-9vw;
+    margin:50px;
     height:55px;
     width:6%;
 }
-button{
-    margin-top:20vw;
+input[type=submit]{
+    margin:10px;
+    background-color:red;
 }
 /* h2{
     font-size:30px;

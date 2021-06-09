@@ -1,3 +1,15 @@
+<?php
+
+    if(isset($_POST['submit'])){
+        $totalSum = $_POST['Value1'] + $_POST['Value2'];
+        if($totalSum != $_POST['sum']){
+            echo "wrong answ";
+        }
+        else{
+            echo "correct ans";
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +36,8 @@
                 <label><?php echo $value2?></label>
                 <input type="hidden" name="Value1" value="<?php echo $value1; ?>" />
                 <input type="hidden" name="Value2" value="<?php echo $value2; ?>" />
-                <button type="submit" value="submit">check ans</button>
+                <input type="text" name="sum" />
+                <input type="submit" value="calculate" name="submit" />
                 
             </form>
         </div>
