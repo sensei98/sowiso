@@ -6,8 +6,8 @@
     font-size: 100%;
 }
 form {
-    width:100%;
-    height:100vh;
+    /* width:100%; */
+    height:50vh;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -19,6 +19,7 @@ label{
     padding:10px;
     margin:15px;
     font-size:40px;
+    color:#ffffff;
 }
 input{
     margin-top:10vw;
@@ -26,18 +27,33 @@ input{
     margin:50px;
     height:55px;
     width:6%;
+    background-color:#f6f7f8;
+
+}
+input[type=text]{
+    font-size: 40px;
 }
 input[type=submit]{
     margin:10px;
-    background-color:red;
+    background-color:#FD501E;
+    color:#ffffff;
+    width:10%;
 }
-/* h2{
-    font-size:30px;
-    height:40vh;
-} */
+
 .container{
-    background-color:#ccc;
+    background-color:#262626;
 }
+h2{
+    text-transform: uppercase;
+    color:white;
+    width:100%;
+    height:10vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 50px;
+}
+
 
     
 

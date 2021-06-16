@@ -1,14 +1,18 @@
 <?php
-
     if(isset($_POST['submit'])){
-        $totalSum = $_POST['Value1'] + $_POST['Value2'];
+
+        $value1 =  $_POST['Value1'];
+        $value2 = $_POST['Value2'];
+        $totalSum = $value1 + $value2;
+        
         if($totalSum != $_POST['sum']){
-            echo "wrong answ";
+            echo '<script>window.alert("WRONG ANSWER! TRY AGAIN")</script>';
         }
-        else{
-            echo "correct ans";
+         else{
+            echo '<script>window.alert("CORRECT ANSWER!")</script>';
         }
     }
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,6 +26,7 @@
 <body>
 
         <div class="container">
+            <h2>sowiso developer assignment</h2>
             
             <form method="POST">
 
@@ -29,7 +34,6 @@
                     $value1 = rand(1,100);
                     $value2 = rand(1,100);
                     $addSign = "+";
-                    //next send the values with the form to calc.php
                 ?>
                 <label><?php echo $value1?></label>
                 <label><?php echo $addSign?></label>
@@ -37,8 +41,7 @@
                 <input type="hidden" name="Value1" value="<?php echo $value1; ?>" />
                 <input type="hidden" name="Value2" value="<?php echo $value2; ?>" />
                 <input type="text" name="sum" />
-                <input type="submit" value="calculate" name="submit" />
-                
+                <input type="submit" value="check" name="submit" />
             </form>
         </div>
 
